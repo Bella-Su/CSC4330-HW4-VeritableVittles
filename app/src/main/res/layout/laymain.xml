@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- ============================================================= -->
+<!-- Application: Veritable Vittles -->
+<!-- Activity:    ActMain -->
+<!-- ============================================================= -->
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:fillViewport="true"
+    tools:context=".ActMain"
+    >
+
+    <LinearLayout
+        android:id="@+id/llMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <!-- Toolbar row -->
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tbrMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FF1E5885"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            />
+
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <!--Party name  row -->
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:padding="4dp"
+                android:textColor="@android:color/black"
+                android:text="Party name:"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+
+            <EditText
+                android:id="@+id/txtPartyName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="4dp"
+                android:padding="4dp"
+                android:background="@android:color/white"
+                android:textColor="@android:color/black"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <!--Number of people  row -->
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:padding="4dp"
+                android:textColor="@android:color/black"
+                android:text="Number of People:"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+
+            <EditText
+                android:id="@+id/txtNumberOfPeople"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="4dp"
+                android:padding="4dp"
+                android:background="@android:color/white"
+                android:textColor="@android:color/black"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <!-- Seating types row -->
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:padding="4dp"
+                android:textColor="@android:color/black"
+                android:text="Seating types:"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+
+            <Spinner
+                android:id="@+id/spSeatingTypes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_margin="4dp"
+                android:padding="4dp"
+                android:background="@android:color/holo_blue_dark"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+
+            <EditText
+                android:id="@+id/txtSeatingTypes"
+                android:inputType="text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_margin="4dp"
+                android:padding="4dp"
+                android:background="@android:color/white"
+                android:textColor="@android:color/black"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:focusable="false"
+                />
+
+        </LinearLayout>
+
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <!--Occasion  row -->
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:padding="4dp"
+                android:textColor="@android:color/black"
+                android:text="Occasion:"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+
+            <EditText
+                android:id="@+id/txtOccasion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="4dp"
+                android:padding="4dp"
+                android:background="@android:color/white"
+                android:textColor="@android:color/black"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <!-- Button row -->
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                >
+            </Space>
+
+            <ToggleButton
+                android:id="@+id/tbtAction"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:padding="4dp"
+                android:background="@android:color/holo_blue_dark"
+                android:textColor="@android:color/black"
+                android:textOn="Submit"
+                android:textOff="Cancel"
+                android:textAllCaps="false"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:checked="true"
+                android:onClick="changeReservationAction"
+                />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                >
+            </Space>
+
+            <Button
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:padding="4dp"
+                android:background="@android:color/holo_blue_dark"
+                android:textColor="@android:color/black"
+                android:text="Recall"
+                android:textAllCaps="false"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:onClick="recallReservation"
+                />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                >
+            </Space>
+
+            <Button
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:padding="4dp"
+                android:background="@android:color/holo_blue_dark"
+                android:textColor="@android:color/black"
+                android:text="Reset"
+                android:textAllCaps="false"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:onClick="resetReservation"
+                />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                >
+            </Space>
+
+        </LinearLayout>
+
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <!--Waiting time  row -->
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:padding="4dp"
+                android:text="Waiting time (min):"
+                android:textColor="@android:color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtWaitingTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:background="@android:color/white"
+                android:focusable="false"
+                android:gravity="center"
+                android:padding="4dp"
+                android:textColor="@android:color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <!-- Speak row -->
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                >
+            </Space>
+
+            <Button
+                android:id="@+id/btnSpeak"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:padding="4dp"
+                android:background="@android:color/holo_orange_dark"
+                android:textColor="@android:color/black"
+                android:text="Speak"
+                android:textAllCaps="false"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:onClick="speakWaitingTime"
+                />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                >
+            </Space>
+
+
+        </LinearLayout>
+
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <!--Reservation ready  row -->
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                >
+            </Space>
+
+            <TextView
+                android:id="@+id/txtReservationReady"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:padding="4dp"
+                android:textColor="@android:color/holo_orange_dark"
+                android:text="Reservation ready!"
+                android:visibility="invisible"
+                android:textAlignment="center"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                >
+            </Space>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
